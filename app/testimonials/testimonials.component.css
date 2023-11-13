@@ -1,0 +1,38 @@
+.testimonial-carousel{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.testimonials-text{
+  padding-left: 100px;
+  padding-right: 100px;
+  font-size: x-large;
+}
+
+.testimonial-details{
+  display: grid;
+  justify-content: center;
+  font-size: larger;
+  text-align: center;
+}
+
+.name {
+  font-size: xx-large;
+}
+
+.postion {
+  text-align: center;
+  font-size: larger;
+  color: #9D59D2;
+}

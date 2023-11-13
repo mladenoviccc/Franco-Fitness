@@ -1,0 +1,12 @@
+<ng-container *ngIf="showBanner">
+  <banner [title]="pageTitle"></banner>
+</ng-container>
+<div class="title">Our Services</div>
+<div class="wrapper">
+  <div *ngFor="let service of services" class="box">
+    <img [src]="service.imageUrl" class="img" />
+    <h2 class="heading">{{ service.title }}</h2>
+    <p>{{ service.description }}</p>
+    <button class="btn">Learn More</button>
+  </div>
+</div>

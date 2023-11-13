@@ -1,0 +1,14 @@
+<ng-container *ngIf="showBanner">
+  <banner [title]="pageTitle"></banner>
+</ng-container>
+<div class="wrapper">
+  <div *ngFor="let faq of faqs">
+    <button class="accordion" (click)="questionClicked(faq)">
+      {{ faq.question }}
+      <i class="arrow up"></i>
+    </button>
+    <div *ngIf="faq.opened">
+      <p class="answer">{{ faq.answer }}</p>
+    </div>
+  </div>
+</div>

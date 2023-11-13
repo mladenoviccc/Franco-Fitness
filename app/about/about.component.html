@@ -1,0 +1,16 @@
+<div class="">
+  <ng-container *ngIf="showBanner">
+    <banner [title]="pageTitle"></banner>
+  </ng-container>
+  <div *ngFor="let item of items" class="wrapper">
+    <div class="paragraph">
+      <h2 class="title">{{ item.title }}</h2>
+      <p>{{ item.description }}</p>
+      <p>{{ item.description2 }}</p>
+      <button class="btn">Call Us Now</button>
+    </div>
+    <div class="img">
+      <img [src]="item.imageUrl" class="image" />
+    </div>
+  </div>
+</div>

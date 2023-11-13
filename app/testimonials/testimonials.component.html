@@ -1,0 +1,20 @@
+<div class="testimonial-carousel">
+  <div class="testimonial-item" *ngIf="testimonials">
+    <div class="testimonial-image">
+      <img
+        [src]="testimonials[currentTestimonialIndex].imageUrl"
+        alt="Testimonial Image"
+        class="image"
+      />
+    </div>
+    <div class="testimonial-text">
+      {{ testimonials[currentTestimonialIndex].content }}
+      <div class="testimonial-details">
+        <h3 class="name">{{ testimonials[currentTestimonialIndex].name }}</h3>
+        <p class="position">
+          {{ testimonials[currentTestimonialIndex].position }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
